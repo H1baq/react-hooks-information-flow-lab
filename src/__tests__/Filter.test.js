@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import Filter from "../components/Filter";
 
 test("displays the <select> element", () => {
-  render(<Filter />);
+  render(<Filter onCategoryChange={()=>{}} />);
   expect(screen.queryByRole("combobox")).toBeInTheDocument();
 });
 
